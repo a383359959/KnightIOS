@@ -1,0 +1,40 @@
+//
+//  PrefixHeader.pch
+//
+//  Created by QiuHao on 2019/2/21.
+//  Copyright © 2019年 QiuHao. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import <Masonry/Masonry.h>
+#import <MBProgressHUD/MBProgressHUD.h>
+#import <MJRefresh/MJRefresh.h>
+#import <AVOSCloud/AVOSCloud.h>
+
+#import <User/User.h>
+
+#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
+#define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
+#define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)
+#define kObjectIsEmpty(_object) (_object == nil \
+|| [_object isKindOfClass:[NSNull class]] \
+|| ([_object respondsToSelector:@selector(length)] && [(NSData *)_object length] == 0) \
+|| ([_object respondsToSelector:@selector(count)] && [(NSArray *)_object count] == 0))
+
+#define SERVER_HOST         @"http://yimei.yd21g.com/index.php/Api/"
+#define UPLOAD_PATH         @"http://yimei.yd21g.com/Upload"
+
+#define kWidth              [UIScreen mainScreen].bounds.size.width
+#define kHeight             [UIScreen mainScreen].bounds.size.height
+
+#define IS_IPHONEX (([[UIScreen mainScreen] bounds].size.height - 812) ? NO : YES)
+#define SafeTop (([[UIScreen mainScreen] bounds].size.height - 812) ? 20 : 44)
+#define SafeTopBar (([[UIScreen mainScreen] bounds].size.height - 812) ? 64 : 88)
+#define SafeBottom (([[UIScreen mainScreen] bounds].size.height - 812) ? 0 : 50)
+#define SafeHeight kHeight - SafeBottom
+#define TopBarHeight SafeTop + 40
+
+#endif
