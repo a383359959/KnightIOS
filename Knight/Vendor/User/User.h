@@ -10,6 +10,9 @@
 #import <UIKit/UIKit.h>
 #import "Header.h"
 #import "LoginViewController.h"
+#import "HomeViewController.h"
+#import "UserInfoViewController.h"
+#import "OrderViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -24,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)initApp;
 
 + (void)createNav:(UIViewController *)controller title:(NSString *)title hidden:(NSNumber *)hidden;
+
+// 登陆
++ (void)login:(NSString *)username password:(NSString *)password view:(UIView *)view;
 
 @end
 

@@ -13,6 +13,18 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Login : UIView
 
+@property (weak, nonatomic) IBOutlet UITextField *username;
+
+@property (weak, nonatomic) IBOutlet UITextField *password;
+
+@property (weak, nonatomic) IBOutlet UIButton *forgetBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *submitBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *regBtn;
+
+@property(nonatomic, copy) void(^submitBlock)(void);
+
 @end
 
 NS_ASSUME_NONNULL_END

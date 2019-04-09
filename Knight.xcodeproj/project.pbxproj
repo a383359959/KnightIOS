@@ -15,6 +15,17 @@
 		DE1AB5B9225B8D43002AC9AD /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1AB5B8225B8D43002AC9AD /* Header.xib */; };
 		DE1AB5BC225B910E002AC9AD /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1AB5BB225B910E002AC9AD /* Login.m */; };
 		DE1AB5BE225B9116002AC9AD /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1AB5BD225B9116002AC9AD /* Login.xib */; };
+		DE587084225C3437007FD31E /* LeanCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = DE587080225C3437007FD31E /* LeanCloud.m */; };
+		DE587085225C3437007FD31E /* QHMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DE587083225C3437007FD31E /* QHMessage.m */; };
+		DE58708B225C6A21007FD31E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE58708A225C6A21007FD31E /* HomeViewController.m */; };
+		DE587091225C6A58007FD31E /* UserInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE587090225C6A58007FD31E /* UserInfoViewController.m */; };
+		DE587095225C6A6F007FD31E /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = DE587094225C6A6F007FD31E /* UserInfo.m */; };
+		DE587098225C6A79007FD31E /* UserInfo.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE587097225C6A79007FD31E /* UserInfo.xib */; };
+		DE58709B225C6A83007FD31E /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = DE58709A225C6A83007FD31E /* Home.m */; };
+		DE58709D225C6A89007FD31E /* Home.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE58709C225C6A89007FD31E /* Home.xib */; };
+		DE5870A4225C6CB5007FD31E /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5870A3225C6CB5007FD31E /* OrderViewController.m */; };
+		DE5870AC225C7058007FD31E /* DaiJieDanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5870AB225C7058007FD31E /* DaiJieDanTableViewCell.m */; };
+		DE5870AF225C706D007FD31E /* DaiJieDanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE5870AE225C706D007FD31E /* DaiJieDanTableViewCell.xib */; };
 		DE8BD3A9225B7ECC0024EB25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8BD3A8225B7ECC0024EB25 /* AppDelegate.m */; };
 		DE8BD3B1225B7ECD0024EB25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8BD3B0225B7ECD0024EB25 /* Assets.xcassets */; };
 		DE8BD3B4225B7ECD0024EB25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8BD3B2225B7ECD0024EB25 /* LaunchScreen.storyboard */; };
@@ -59,6 +70,25 @@
 		DE1AB5BA225B910E002AC9AD /* Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		DE1AB5BB225B910E002AC9AD /* Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		DE1AB5BD225B9116002AC9AD /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		DE58707F225C3437007FD31E /* LeanCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeanCloud.h; sourceTree = "<group>"; };
+		DE587080225C3437007FD31E /* LeanCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeanCloud.m; sourceTree = "<group>"; };
+		DE587082225C3437007FD31E /* QHMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHMessage.h; sourceTree = "<group>"; };
+		DE587083225C3437007FD31E /* QHMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QHMessage.m; sourceTree = "<group>"; };
+		DE587089225C6A21007FD31E /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		DE58708A225C6A21007FD31E /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		DE58708F225C6A58007FD31E /* UserInfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoViewController.h; sourceTree = "<group>"; };
+		DE587090225C6A58007FD31E /* UserInfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoViewController.m; sourceTree = "<group>"; };
+		DE587093225C6A6F007FD31E /* UserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		DE587094225C6A6F007FD31E /* UserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		DE587097225C6A79007FD31E /* UserInfo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfo.xib; sourceTree = "<group>"; };
+		DE587099225C6A83007FD31E /* Home.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Home.h; sourceTree = "<group>"; };
+		DE58709A225C6A83007FD31E /* Home.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Home.m; sourceTree = "<group>"; };
+		DE58709C225C6A89007FD31E /* Home.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Home.xib; sourceTree = "<group>"; };
+		DE5870A2225C6CB5007FD31E /* OrderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrderViewController.h; sourceTree = "<group>"; };
+		DE5870A3225C6CB5007FD31E /* OrderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrderViewController.m; sourceTree = "<group>"; };
+		DE5870AA225C7058007FD31E /* DaiJieDanTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DaiJieDanTableViewCell.h; sourceTree = "<group>"; };
+		DE5870AB225C7058007FD31E /* DaiJieDanTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaiJieDanTableViewCell.m; sourceTree = "<group>"; };
+		DE5870AE225C706D007FD31E /* DaiJieDanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaiJieDanTableViewCell.xib; sourceTree = "<group>"; };
 		DE8BD3A4225B7ECC0024EB25 /* Knight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8BD3A7225B7ECC0024EB25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE8BD3A8225B7ECC0024EB25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -165,6 +195,123 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		DE58707E225C3437007FD31E /* LeanCloud */ = {
+			isa = PBXGroup;
+			children = (
+				DE58707F225C3437007FD31E /* LeanCloud.h */,
+				DE587080225C3437007FD31E /* LeanCloud.m */,
+			);
+			path = LeanCloud;
+			sourceTree = "<group>";
+		};
+		DE587081225C3437007FD31E /* QHMessage */ = {
+			isa = PBXGroup;
+			children = (
+				DE587082225C3437007FD31E /* QHMessage.h */,
+				DE587083225C3437007FD31E /* QHMessage.m */,
+			);
+			path = QHMessage;
+			sourceTree = "<group>";
+		};
+		DE587086225C6A08007FD31E /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DE587088225C6A10007FD31E /* View */,
+				DE587087225C6A0C007FD31E /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DE587087225C6A0C007FD31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE587089225C6A21007FD31E /* HomeViewController.h */,
+				DE58708A225C6A21007FD31E /* HomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE587088225C6A10007FD31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE587099225C6A83007FD31E /* Home.h */,
+				DE58709A225C6A83007FD31E /* Home.m */,
+				DE58709C225C6A89007FD31E /* Home.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE58708C225C6A3F007FD31E /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				DE58708E225C6A4D007FD31E /* View */,
+				DE58708D225C6A45007FD31E /* Controller */,
+			);
+			path = UserInfo;
+			sourceTree = "<group>";
+		};
+		DE58708D225C6A45007FD31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE58708F225C6A58007FD31E /* UserInfoViewController.h */,
+				DE587090225C6A58007FD31E /* UserInfoViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE58708E225C6A4D007FD31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE587093225C6A6F007FD31E /* UserInfo.h */,
+				DE587094225C6A6F007FD31E /* UserInfo.m */,
+				DE587097225C6A79007FD31E /* UserInfo.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE58709E225C6C91007FD31E /* Order */ = {
+			isa = PBXGroup;
+			children = (
+				DE5870A0225C6C9B007FD31E /* View */,
+				DE58709F225C6C97007FD31E /* Controller */,
+			);
+			path = Order;
+			sourceTree = "<group>";
+		};
+		DE58709F225C6C97007FD31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5870A2225C6CB5007FD31E /* OrderViewController.h */,
+				DE5870A3225C6CB5007FD31E /* OrderViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE5870A0225C6C9B007FD31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DE5870A5225C7020007FD31E /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DE5870A6225C7025007FD31E /* DaiJieDan */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DE5870A6225C7025007FD31E /* DaiJieDan */ = {
+			isa = PBXGroup;
+			children = (
+				DE5870AA225C7058007FD31E /* DaiJieDanTableViewCell.h */,
+				DE5870AB225C7058007FD31E /* DaiJieDanTableViewCell.m */,
+				DE5870AE225C706D007FD31E /* DaiJieDanTableViewCell.xib */,
+			);
+			path = DaiJieDan;
+			sourceTree = "<group>";
+		};
 		DE8BD39B225B7ECC0024EB25 = {
 			isa = PBXGroup;
 			children = (
@@ -221,6 +368,10 @@
 		DE8BD3D9225B7F060024EB25 /* Application */ = {
 			isa = PBXGroup;
 			children = (
+				DE5870A5225C7020007FD31E /* Cell */,
+				DE58709E225C6C91007FD31E /* Order */,
+				DE58708C225C6A3F007FD31E /* UserInfo */,
+				DE587086225C6A08007FD31E /* Home */,
 				DE1AB5B3225B8CA0002AC9AD /* Common */,
 				DE8BD3DB225B7F280024EB25 /* Login */,
 				DE8BD3DA225B7F0D0024EB25 /* App */,
@@ -249,6 +400,8 @@
 		DE8BD3DC225B7F330024EB25 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				DE58707E225C3437007FD31E /* LeanCloud */,
+				DE587081225C3437007FD31E /* QHMessage */,
 				DE8BD3DD225B7F550024EB25 /* User */,
 				DE8BD3E1225B80360024EB25 /* PrefixHeader.pch */,
 			);
@@ -373,7 +526,10 @@
 			files = (
 				DE8BD3B4225B7ECD0024EB25 /* LaunchScreen.storyboard in Resources */,
 				DE1AB5B9225B8D43002AC9AD /* Header.xib in Resources */,
+				DE587098225C6A79007FD31E /* UserInfo.xib in Resources */,
+				DE5870AF225C706D007FD31E /* DaiJieDanTableViewCell.xib in Resources */,
 				DE8BD3B1225B7ECD0024EB25 /* Assets.xcassets in Resources */,
+				DE58709D225C6A89007FD31E /* Home.xib in Resources */,
 				DE1AB5BE225B9116002AC9AD /* Login.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -487,10 +643,18 @@
 			files = (
 				DE1AB5B2225B867E002AC9AD /* LoginViewController.m in Sources */,
 				DE8BD3B7225B7ECD0024EB25 /* main.m in Sources */,
+				DE58709B225C6A83007FD31E /* Home.m in Sources */,
 				DE8BD3A9225B7ECC0024EB25 /* AppDelegate.m in Sources */,
 				DE1AB5BC225B910E002AC9AD /* Login.m in Sources */,
+				DE587085225C3437007FD31E /* QHMessage.m in Sources */,
+				DE587091225C6A58007FD31E /* UserInfoViewController.m in Sources */,
+				DE58708B225C6A21007FD31E /* HomeViewController.m in Sources */,
+				DE587084225C3437007FD31E /* LeanCloud.m in Sources */,
+				DE587095225C6A6F007FD31E /* UserInfo.m in Sources */,
 				DE8BD3E0225B7F5E0024EB25 /* User.m in Sources */,
 				DE1AB5B7225B8D1B002AC9AD /* Header.m in Sources */,
+				DE5870A4225C6CB5007FD31E /* OrderViewController.m in Sources */,
+				DE5870AC225C7058007FD31E /* DaiJieDanTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +742,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = /Users/qiuhao/Source/KnightIOS/Knight/Vendor/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -635,6 +800,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = /Users/qiuhao/Source/KnightIOS/Knight/Vendor/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -656,7 +822,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XP44VQ4CP;
-				GCC_PREFIX_HEADER = /Users/qiuhao/Desktop/Knight/Knight/Vendor/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/qiuhao/Source/KnightIOS/Knight/Vendor/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = Knight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -676,7 +842,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9XP44VQ4CP;
-				GCC_PREFIX_HEADER = /Users/qiuhao/Desktop/Knight/Knight/Vendor/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/qiuhao/Source/KnightIOS/Knight/Vendor/PrefixHeader.pch;
 				HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 				INFOPLIST_FILE = Knight/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

@@ -21,6 +21,8 @@
     
     User *user = [User getInstance];
     
+    [LeanCloud getInstance];
+    
     [user saveWindow: self.window];
 
     [user initApp];

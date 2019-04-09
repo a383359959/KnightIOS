@@ -18,9 +18,7 @@
     
     [super viewDidLoad];
     
-    self.view.backgroundColor = [UIColor redColor];
-    
-    [User createNav: self title: @"首页" hidden: @(1)];
+    self.view.backgroundColor = [UIColor whiteColor];
     
     [self createView];
     
@@ -30,7 +28,13 @@
     
     self.login = [[[NSBundle mainBundle] loadNibNamed: @"Login" owner: nil options: nil] lastObject];
     
-    self.login.frame = CGRectMake(0, TopBarHeight, kWidth, SafeHeight);
+    self.login.frame = CGRectMake(0, 0, kWidth, SafeHeight);
+    
+    self.login.submitBlock = ^{
+        
+        [User login: self.login.username.text password: self.login.password.text view: self.view];
+        
+    };
     
     [self.view addSubview: self.login];
     

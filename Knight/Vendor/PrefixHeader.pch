@@ -15,6 +15,8 @@
 #import <AVOSCloud/AVOSCloud.h>
 
 #import <User/User.h>
+#import <LeanCloud/LeanCloud.h>
+#import <QHMessage/QHMessage.h>
 
 #define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 #define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
@@ -26,6 +28,8 @@
 
 #define SERVER_HOST         @"http://yimei.yd21g.com/index.php/Api/"
 #define UPLOAD_PATH         @"http://yimei.yd21g.com/Upload"
+
+#define background_color [UIColor colorWithRed: 245 / 255.f green: 245 / 255.f blue: 245 / 255.f alpha: 1]
 
 #define kWidth              [UIScreen mainScreen].bounds.size.width
 #define kHeight             [UIScreen mainScreen].bounds.size.height
