@@ -41,4 +41,11 @@
 #define SafeHeight kHeight - SafeBottom
 #define TopBarHeight SafeTop + 40
 
+// 弱引用
+#define kWeakSelf(type)  __weak typeof(type) weak##type = type
+// 强引用
+#define kStrongSelf(type) __strong typeof(type) type = weak##type;
+
+#define RGBCOLOR(r, g, b) [UIColor colorWithRed: (r) / 255.0f green: (g) / 255.0f blue: (b) / 255.0f alpha: 1]
+
 #endif

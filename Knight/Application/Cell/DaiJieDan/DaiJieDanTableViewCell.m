@@ -24,4 +24,28 @@
     
 }
 
+- (void)setSubmitBtn:(UIButton *)submitBtn {
+    
+    [submitBtn addTarget: self action: @selector(submitCallback) forControlEvents: UIControlEventTouchUpInside];
+    
+    _submitBtn = submitBtn;
+    
+}
+
+- (void)submitCallback {
+    
+    self.submitBlock();
+    
+}
+
+- (void)setBoxView:(UIView *)boxView {
+    
+    boxView.layer.masksToBounds = YES;
+    
+    boxView.layer.cornerRadius = 5;
+    
+    _boxView = boxView;
+    
+}
+
 @end

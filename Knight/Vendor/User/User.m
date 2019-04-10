@@ -46,6 +46,14 @@ static User *user_obj = nil;
         
         homeNav.tabBarItem = [[UITabBarItem alloc] initWithTitle: @"新任务" image: nil selectedImage: nil];
         
+        OngoingViewController *ongoingVC = [[OngoingViewController alloc] init];
+        
+        UINavigationController *ongoingNav = [[UINavigationController alloc] initWithRootViewController: ongoingVC];
+        
+        ongoingNav.navigationBar.hidden = YES;
+        
+        ongoingNav.tabBarItem = [[UITabBarItem alloc] initWithTitle: @"进行中" image: nil selectedImage: nil];
+        
         OrderViewController *orderVC = [[OrderViewController alloc] init];
         
         UINavigationController *orderNav = [[UINavigationController alloc] initWithRootViewController: orderVC];
@@ -64,7 +72,7 @@ static User *user_obj = nil;
         
         UITabBarController *tab = [[UITabBarController alloc] init];
         
-        tab.viewControllers = [NSArray arrayWithObjects: homeNav, orderNav, userInfoNav, nil];
+        tab.viewControllers = [NSArray arrayWithObjects: homeNav, ongoingNav, orderNav, userInfoNav, nil];
         
         user_obj.window.rootViewController = tab;
         

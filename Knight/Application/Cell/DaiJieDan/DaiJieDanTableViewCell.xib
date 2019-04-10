@@ -141,6 +141,14 @@
                 </constraints>
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+            <connections>
+                <outlet property="boxView" destination="egt-Rp-BXP" id="n8L-hv-n2j"/>
+                <outlet property="end_address" destination="MEg-r1-bjc" id="BZl-FS-hFr"/>
+                <outlet property="end_distance" destination="6E1-8q-LbR" id="pDx-Rc-ugV"/>
+                <outlet property="start_address" destination="ppN-T3-JTR" id="JCZ-fn-fm4"/>
+                <outlet property="start_distance" destination="AwH-tB-JcT" id="bA3-yq-wJk"/>
+                <outlet property="submitBtn" destination="InX-Bn-VAk" id="LXa-DN-ksN"/>
+            </connections>
             <point key="canvasLocation" x="47.826086956521742" y="99.776785714285708"/>
         </tableViewCell>
     </objects>

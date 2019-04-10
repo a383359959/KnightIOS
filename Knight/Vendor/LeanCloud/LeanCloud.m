@@ -64,4 +64,42 @@ static LeanCloud *leanCloud_obj = nil;
     
 }
 
+// 读取列表
+- (void)loadList:(NSNumber *)page type:(LIST_TYPE)type callback:(void(^)(NSArray *array))callback {
+    
+    NSInteger pageInt = page.integerValue;
+    
+    NSInteger pagesize = 10;
+    
+    AVQuery *query = [AVQuery queryWithClassName: @"order"];
+    
+    query.limit = pagesize;
+    
+    query.skip = (pageInt - 1) * pagesize;
+    
+    [query whereKey: @"status" equalTo: [NSNumber numberWithInt: type]];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray * _Nullable objects, NSError * _Nullable error) {
+       
+        callback(objects);
+        
+    }];
+    
+}
+
+// 更改状态
+- (void)changeStatus:(NSString *)objectId type:(LIST_TYPE)type callback:(void(^)(void))callback {
+    
+    AVObject *obj = [AVObject objectWithClassName: @"order" objectId: objectId];
+    
+    [obj setObject: [NSNumber numberWithInt: type] forKey: @"status"];
+    
+    [obj saveInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+       
+        callback();
+        
+    }];
+    
+}
+
 @end

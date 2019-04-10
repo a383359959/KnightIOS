@@ -15,6 +15,8 @@
 		DE1AB5B9225B8D43002AC9AD /* Header.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1AB5B8225B8D43002AC9AD /* Header.xib */; };
 		DE1AB5BC225B910E002AC9AD /* Login.m in Sources */ = {isa = PBXBuildFile; fileRef = DE1AB5BB225B910E002AC9AD /* Login.m */; };
 		DE1AB5BE225B9116002AC9AD /* Login.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE1AB5BD225B9116002AC9AD /* Login.xib */; };
+		DE39DE6F225DBD9C00CAA775 /* Ongoing.m in Sources */ = {isa = PBXBuildFile; fileRef = DE39DE6E225DBD9C00CAA775 /* Ongoing.m */; };
+		DE39DE71225DBDA300CAA775 /* Ongoing.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE39DE70225DBDA300CAA775 /* Ongoing.xib */; };
 		DE587084225C3437007FD31E /* LeanCloud.m in Sources */ = {isa = PBXBuildFile; fileRef = DE587080225C3437007FD31E /* LeanCloud.m */; };
 		DE587085225C3437007FD31E /* QHMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = DE587083225C3437007FD31E /* QHMessage.m */; };
 		DE58708B225C6A21007FD31E /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE58708A225C6A21007FD31E /* HomeViewController.m */; };
@@ -26,6 +28,7 @@
 		DE5870A4225C6CB5007FD31E /* OrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5870A3225C6CB5007FD31E /* OrderViewController.m */; };
 		DE5870AC225C7058007FD31E /* DaiJieDanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5870AB225C7058007FD31E /* DaiJieDanTableViewCell.m */; };
 		DE5870AF225C706D007FD31E /* DaiJieDanTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE5870AE225C706D007FD31E /* DaiJieDanTableViewCell.xib */; };
+		DE5870BF225DBC32007FD31E /* OngoingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE5870BE225DBC32007FD31E /* OngoingViewController.m */; };
 		DE8BD3A9225B7ECC0024EB25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8BD3A8225B7ECC0024EB25 /* AppDelegate.m */; };
 		DE8BD3B1225B7ECD0024EB25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DE8BD3B0225B7ECD0024EB25 /* Assets.xcassets */; };
 		DE8BD3B4225B7ECD0024EB25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE8BD3B2225B7ECD0024EB25 /* LaunchScreen.storyboard */; };
@@ -70,6 +73,9 @@
 		DE1AB5BA225B910E002AC9AD /* Login.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Login.h; sourceTree = "<group>"; };
 		DE1AB5BB225B910E002AC9AD /* Login.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Login.m; sourceTree = "<group>"; };
 		DE1AB5BD225B9116002AC9AD /* Login.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Login.xib; sourceTree = "<group>"; };
+		DE39DE6D225DBD9C00CAA775 /* Ongoing.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ongoing.h; sourceTree = "<group>"; };
+		DE39DE6E225DBD9C00CAA775 /* Ongoing.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ongoing.m; sourceTree = "<group>"; };
+		DE39DE70225DBDA300CAA775 /* Ongoing.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Ongoing.xib; sourceTree = "<group>"; };
 		DE58707F225C3437007FD31E /* LeanCloud.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeanCloud.h; sourceTree = "<group>"; };
 		DE587080225C3437007FD31E /* LeanCloud.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeanCloud.m; sourceTree = "<group>"; };
 		DE587082225C3437007FD31E /* QHMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QHMessage.h; sourceTree = "<group>"; };
@@ -89,6 +95,8 @@
 		DE5870AA225C7058007FD31E /* DaiJieDanTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DaiJieDanTableViewCell.h; sourceTree = "<group>"; };
 		DE5870AB225C7058007FD31E /* DaiJieDanTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DaiJieDanTableViewCell.m; sourceTree = "<group>"; };
 		DE5870AE225C706D007FD31E /* DaiJieDanTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DaiJieDanTableViewCell.xib; sourceTree = "<group>"; };
+		DE5870BD225DBC32007FD31E /* OngoingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OngoingViewController.h; sourceTree = "<group>"; };
+		DE5870BE225DBC32007FD31E /* OngoingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OngoingViewController.m; sourceTree = "<group>"; };
 		DE8BD3A4225B7ECC0024EB25 /* Knight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Knight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE8BD3A7225B7ECC0024EB25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		DE8BD3A8225B7ECC0024EB25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -312,6 +320,34 @@
 			path = DaiJieDan;
 			sourceTree = "<group>";
 		};
+		DE5870B6225DBBF6007FD31E /* Ongoing */ = {
+			isa = PBXGroup;
+			children = (
+				DE5870B9225DBC08007FD31E /* View */,
+				DE5870B7225DBBFD007FD31E /* Controller */,
+			);
+			path = Ongoing;
+			sourceTree = "<group>";
+		};
+		DE5870B7225DBBFD007FD31E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DE5870BD225DBC32007FD31E /* OngoingViewController.h */,
+				DE5870BE225DBC32007FD31E /* OngoingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		DE5870B9225DBC08007FD31E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE39DE6D225DBD9C00CAA775 /* Ongoing.h */,
+				DE39DE6E225DBD9C00CAA775 /* Ongoing.m */,
+				DE39DE70225DBDA300CAA775 /* Ongoing.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		DE8BD39B225B7ECC0024EB25 = {
 			isa = PBXGroup;
 			children = (
@@ -369,6 +405,7 @@
 			isa = PBXGroup;
 			children = (
 				DE5870A5225C7020007FD31E /* Cell */,
+				DE5870B6225DBBF6007FD31E /* Ongoing */,
 				DE58709E225C6C91007FD31E /* Order */,
 				DE58708C225C6A3F007FD31E /* UserInfo */,
 				DE587086225C6A08007FD31E /* Home */,
@@ -529,6 +566,7 @@
 				DE587098225C6A79007FD31E /* UserInfo.xib in Resources */,
 				DE5870AF225C706D007FD31E /* DaiJieDanTableViewCell.xib in Resources */,
 				DE8BD3B1225B7ECD0024EB25 /* Assets.xcassets in Resources */,
+				DE39DE71225DBDA300CAA775 /* Ongoing.xib in Resources */,
 				DE58709D225C6A89007FD31E /* Home.xib in Resources */,
 				DE1AB5BE225B9116002AC9AD /* Login.xib in Resources */,
 			);
@@ -646,11 +684,13 @@
 				DE58709B225C6A83007FD31E /* Home.m in Sources */,
 				DE8BD3A9225B7ECC0024EB25 /* AppDelegate.m in Sources */,
 				DE1AB5BC225B910E002AC9AD /* Login.m in Sources */,
+				DE39DE6F225DBD9C00CAA775 /* Ongoing.m in Sources */,
 				DE587085225C3437007FD31E /* QHMessage.m in Sources */,
 				DE587091225C6A58007FD31E /* UserInfoViewController.m in Sources */,
 				DE58708B225C6A21007FD31E /* HomeViewController.m in Sources */,
 				DE587084225C3437007FD31E /* LeanCloud.m in Sources */,
 				DE587095225C6A6F007FD31E /* UserInfo.m in Sources */,
+				DE5870BF225DBC32007FD31E /* OngoingViewController.m in Sources */,
 				DE8BD3E0225B7F5E0024EB25 /* User.m in Sources */,
 				DE1AB5B7225B8D1B002AC9AD /* Header.m in Sources */,
 				DE5870A4225C6CB5007FD31E /* OrderViewController.m in Sources */,

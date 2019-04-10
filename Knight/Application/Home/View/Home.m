@@ -30,7 +30,7 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     
-    return 10;
+    return self.dataAry.count;
     
 }
 
@@ -44,6 +44,22 @@
         
     }
     
+    NSString *objectId = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"objectId"];
+    
+    cell.start_address.text = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"start_address"];
+    
+    cell.start_distance.text = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"start_distance"];
+    
+    cell.end_address.text = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"end_address"];
+    
+    cell.end_distance.text = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"end_distance"];
+    
+    cell.submitBlock = ^{
+      
+        [self showMessage: objectId];
+        
+    };
+    
     return cell;
     
 }
@@ -51,6 +67,41 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return 141.5;
+    
+}
+
+- (void)showMessage:(NSString *)objectId {
+    
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle: @"提示" message: @"确定接单" preferredStyle: UIAlertControllerStyleAlert];
+    
+    UIAlertAction *success = [UIAlertAction actionWithTitle: @"是" style: UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        
+        self.submitBlock(objectId);
+        
+    }];
+    
+    UIAlertAction *cancel = [UIAlertAction actionWithTitle: @"否" style: UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+        
+    }];
+    
+    [alert addAction: success];
+    [alert addAction: cancel];
+    
+    [self.parentContainerViewController presentViewController: alert animated: YES completion: nil];
+    
+}
+
+- (void)setNoData:(UIButton *)noData {
+    
+    [noData addTarget: self action: @selector(noDataCallback) forControlEvents: UIControlEventTouchUpInside];
+    
+    _noData = noData;
+    
+}
+
+- (void)noDataCallback {
+    
+    self.noDataBlock();
     
 }
 

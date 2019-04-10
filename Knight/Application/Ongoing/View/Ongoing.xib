@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="Ongoing">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="skC-US-iRW">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
+                </tableView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HcL-gK-gIM">
+                    <rect key="frame" x="93.5" y="334.5" width="227" height="227"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="227" id="1Jg-9d-7rB"/>
+                        <constraint firstAttribute="height" constant="227" id="K0I-9Q-zx5"/>
+                    </constraints>
+                    <state key="normal" image="no_data"/>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HcL-gK-gIM" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="8wg-lN-WbK"/>
+                <constraint firstItem="skC-US-iRW" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9b4-bY-QCw"/>
+                <constraint firstItem="HcL-gK-gIM" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="KGs-AU-Uq5"/>
+                <constraint firstAttribute="trailing" secondItem="skC-US-iRW" secondAttribute="trailing" id="NRD-wn-jAS"/>
+                <constraint firstAttribute="bottom" secondItem="skC-US-iRW" secondAttribute="bottom" id="Qxo-fX-R5a"/>
+                <constraint firstItem="skC-US-iRW" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eX9-sF-URw"/>
+            </constraints>
+            <connections>
+                <outlet property="noData" destination="HcL-gK-gIM" id="wFG-Z7-3Sk"/>
+                <outlet property="tableList" destination="skC-US-iRW" id="m14-QJ-PGI"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="no_data" width="227" height="227"/>
+    </resources>
+</document>

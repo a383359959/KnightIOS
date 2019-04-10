@@ -1,19 +1,19 @@
 //
-//  HomeViewController.h
+//  OngoingViewController.h
 //  Knight
 //
-//  Created by QiuHao on 2019/4/9.
+//  Created by QiuHao on 2019/4/10.
 //  Copyright © 2019 QiuHao. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "Home.h"
+#import "Ongoing.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : UIViewController
+@interface OngoingViewController : UIViewController
 
-@property(nonatomic, strong) Home *home;
+@property(nonatomic, strong) Ongoing *ongoing;
 
 @property(nonatomic, strong) NSNumber *page;
 
