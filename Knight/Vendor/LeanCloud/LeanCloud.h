@@ -37,6 +37,19 @@ typedef enum{
 // 更改状态
 - (void)changeStatus:(NSString *)objectId type:(LIST_TYPE)type callback:(void(^)(void))callback;
 
+// 修改密码
+- (void)updatePassword:(NSString *)old_password new_pasword:(NSString *)new_password view:(UIView *)view;
+
+// 退出
+- (void)logout:(void(^)(void))callback;
+
+// 注册
+- (void)reg:(NSString *)username password:(NSString *)password successCallback:(void(^)(void))successCallback errorCallback:(void(^)(NSString *msg))errorCallback;
+
+- (void)loadRow:(NSString *)objectId callback:(void(^)(AVObject *obj))callback;
+
+- (void)checkType:(void(^)(NSNumber *gardento, NSString *usernakg))callback;
+
 @end
 
 NS_ASSUME_NONNULL_END

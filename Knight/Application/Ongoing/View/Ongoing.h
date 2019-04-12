@@ -18,15 +18,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UITableView *tableList;
 
-@property(nonatomic, strong) UIButton *cancelBtn;
-
-@property(nonatomic, strong) UIButton *successBtn;
-
 @property(nonatomic, strong) NSMutableArray *dataAry;
 
 @property(nonatomic, copy) void(^submitBlock)(NSString *objectId, LIST_TYPE type);
 
 @property(nonatomic, copy) void(^noDataBlock)(void);
+
+@property(nonatomic, copy) void(^didSelectBlock)(NSString *objectId);
 
 @end
 

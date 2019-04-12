@@ -36,6 +36,14 @@
 
 }
 
+- (void)setRegBtn:(UIButton *)regBtn {
+    
+    [regBtn addTarget: self action: @selector(regCallback) forControlEvents: UIControlEventTouchUpInside];
+    
+    _regBtn = regBtn;
+    
+}
+
 - (void)submitCallback {
     
     QHMessage *message = [QHMessage getInstance];
@@ -57,6 +65,12 @@
         self.submitBlock();
         
     }
+    
+}
+
+- (void)regCallback {
+    
+    self.regBlock();
     
 }
 

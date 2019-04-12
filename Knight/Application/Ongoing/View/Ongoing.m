@@ -44,19 +44,7 @@
         
     }
     
-    [cell.submitBtn removeFromSuperview];
-    
-    [cell addSubview: self.cancelBtn];
-    
-    [cell addSubview: self.successBtn];
-    
-    self.cancelBtn.tag = indexPath.row;
-    
-    [self.cancelBtn addTarget: self action: @selector(showCancelMessage:) forControlEvents: UIControlEventTouchUpInside];
-    
-    self.successBtn.tag = indexPath.row;
-    
-    [self.successBtn addTarget: self action: @selector(showSuccessMessage:) forControlEvents: UIControlEventTouchUpInside];
+    NSString *objectId = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"objectId"];
     
     cell.start_address.text = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"start_address"];
     
@@ -66,51 +54,21 @@
     
     cell.end_distance.text = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"end_distance"];
     
+    cell.cancelBlock = ^{
+        
+        [self showCancelMessage: objectId];
+        
+    };
+    
+    cell.successBlock = ^{
+        
+        [self showSuccessMessage: objectId];
+        
+    };
+    
+    [cell reloadLayout: LIST_TYPE_ONGOING_TASK];
+    
     return cell;
-    
-}
-
-- (UIButton *)cancelBtn {
-    
-    if (_cancelBtn == nil) {
-        
-        float width = (kWidth - 40) / 2;
-        
-        _cancelBtn = [[UIButton alloc] initWithFrame: CGRectMake(20, 101, width, 40)];
-        
-        [_cancelBtn setTitle: @"取消订单" forState: UIControlStateNormal];
-        
-        [_cancelBtn setTitleColor: [UIColor redColor] forState: UIControlStateNormal];
-        
-        [_cancelBtn.titleLabel setFont: [UIFont fontWithName: @"System" size: 15]];
-        
-        _cancelBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        
-    }
-    
-    return _cancelBtn;
-    
-}
-
-- (UIButton *)successBtn {
-    
-    if (_successBtn == nil) {
-        
-        float width = (kWidth - 40) / 2;
-        
-        _successBtn = [[UIButton alloc] initWithFrame: CGRectMake(20 + width, 101, width, 40)];
-        
-        [_successBtn setTitle: @"完成订单" forState: UIControlStateNormal];
-        
-        [_successBtn setTitleColor: RGBCOLOR(41, 161, 247) forState: UIControlStateNormal];
-        
-        [_successBtn.titleLabel setFont: [UIFont fontWithName: @"System" size: 15]];
-        
-        _successBtn.titleLabel.textAlignment = NSTextAlignmentCenter;
-        
-    }
-    
-    return _successBtn;
     
 }
 
@@ -120,9 +78,15 @@
     
 }
 
-- (void)showCancelMessage:(UIButton *)btn{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSString *objectId = [[self.dataAry objectAtIndex: btn.tag] objectForKey: @"objectId"];
+    NSString *objectId = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"objectId"];
+    
+    self.didSelectBlock(objectId);
+    
+}
+
+- (void)showCancelMessage:(NSString *)objectId {
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle: @"提示" message: @"确定取消？" preferredStyle: UIAlertControllerStyleAlert];
     
@@ -143,9 +107,7 @@
     
 }
 
-- (void)showSuccessMessage:(UIButton *)btn {
-    
-    NSString *objectId = [[self.dataAry objectAtIndex: btn.tag] objectForKey: @"objectId"];
+- (void)showSuccessMessage:(NSString *)objectId {
     
     UIAlertController *alert = [UIAlertController alertControllerWithTitle: @"提示" message: @"确定完成？" preferredStyle: UIAlertControllerStyleAlert];
     

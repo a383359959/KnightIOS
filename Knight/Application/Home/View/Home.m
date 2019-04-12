@@ -54,6 +54,8 @@
     
     cell.end_distance.text = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"end_distance"];
     
+    [cell reloadLayout: LIST_TYPE_NEW_TASK];
+    
     cell.submitBlock = ^{
       
         [self showMessage: objectId];
@@ -67,6 +69,14 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return 141.5;
+    
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSString *objectId = [[self.dataAry objectAtIndex: indexPath.row] objectForKey: @"objectId"];
+    
+    self.didSelectBlock(objectId);
     
 }
 

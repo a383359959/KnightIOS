@@ -23,6 +23,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, copy) void(^noDataBlock)(void);
 
+@property(nonatomic, copy) void(^didSelectBlock)(NSString *objectId);
+
 @end
 
 NS_ASSUME_NONNULL_END

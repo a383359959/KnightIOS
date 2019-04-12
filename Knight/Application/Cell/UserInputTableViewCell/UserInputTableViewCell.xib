@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserInputTableViewCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="IGf-oc-kLr" customClass="UserInputTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IGf-oc-kLr" id="lAO-ny-wSl">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dxa-0x-alN">
+                        <rect key="frame" x="0.0" y="42.5" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="UYP-lG-ogt"/>
+                        </constraints>
+                    </view>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mvU-4y-gD0">
+                        <rect key="frame" x="10" y="0.0" width="355" height="42.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="dxa-0x-alN" secondAttribute="bottom" id="0gt-Ds-Fkw"/>
+                    <constraint firstItem="dxa-0x-alN" firstAttribute="top" secondItem="mvU-4y-gD0" secondAttribute="bottom" id="2Vr-yU-svB"/>
+                    <constraint firstItem="dxa-0x-alN" firstAttribute="leading" secondItem="lAO-ny-wSl" secondAttribute="leading" id="9oH-XF-obH"/>
+                    <constraint firstAttribute="trailing" secondItem="dxa-0x-alN" secondAttribute="trailing" id="E7O-Dn-hnA"/>
+                    <constraint firstItem="mvU-4y-gD0" firstAttribute="leading" secondItem="lAO-ny-wSl" secondAttribute="leading" constant="10" id="bFk-V3-Mz1"/>
+                    <constraint firstAttribute="trailing" secondItem="mvU-4y-gD0" secondAttribute="trailing" constant="10" id="ptL-wC-9YI"/>
+                    <constraint firstItem="mvU-4y-gD0" firstAttribute="top" secondItem="lAO-ny-wSl" secondAttribute="top" id="qXX-ja-Cvr"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="line" destination="dxa-0x-alN" id="8hh-nX-QCz"/>
+                <outlet property="title" destination="mvU-4y-gD0" id="jBn-jA-jOx"/>
+            </connections>
+            <point key="canvasLocation" x="52" y="54.872563718140931"/>
+        </tableViewCell>
+    </objects>
+</document>

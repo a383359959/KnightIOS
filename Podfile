@@ -11,6 +11,7 @@ target 'Knight' do
   pod 'IQKeyboardManager'
   pod 'MJRefresh'
   pod 'AVOSCloud'
+  pod 'JPush'
 
   target 'KnightTests' do
     inherit! :search_paths

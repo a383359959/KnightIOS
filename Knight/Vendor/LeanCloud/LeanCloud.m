@@ -102,4 +102,110 @@ static LeanCloud *leanCloud_obj = nil;
     
 }
 
+- (void)updatePassword:(NSString *)old_password new_pasword:(NSString *)new_password view:(UIView *)view {
+    
+    NSUserDefaults *info = [NSUserDefaults standardUserDefaults];
+    
+    QHMessage *message = [QHMessage getInstance];
+    
+    NSString *password = [info objectForKey: @"password"];
+    
+    if ([old_password isEqualToString: password]) {
+        
+        MBProgressHUD *hub = [message showLoading: view];
+        
+        AVUser *user = [AVUser currentUser];
+        
+        [user updatePassword: old_password newPassword: new_password block:^(id  _Nullable object, NSError * _Nullable error) {
+            
+            [leanCloud_obj logout:^{
+                
+                [hub hideAnimated: YES];
+                
+                User *user = [User getInstance];
+                
+                [user initApp];
+                
+            }];
+            
+        }];
+        
+    } else {
+        
+        [message toast: @"旧密码错误" view: view];
+        
+    }
+    
+}
+
+- (void)logout:(void(^)(void))callback {
+    
+    NSUserDefaults *info = [NSUserDefaults standardUserDefaults];
+    
+    [info removeObjectForKey: @"username"];
+    
+    [info removeObjectForKey: @"password"];
+    
+    [info removeObjectForKey: @"session"];
+    
+    [info synchronize];
+    
+    [AVUser logOut];
+    
+    callback();
+    
+}
+
+- (void)reg:(NSString *)username password:(NSString *)password successCallback:(void(^)(void))successCallback errorCallback:(void(^)(NSString *msg))errorCallback {
+    
+    AVUser *user = [AVUser user];
+    
+    user.username = username;
+    
+    user.password = password;
+    
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError * _Nullable error) {
+        
+        if (succeeded) {
+            
+            successCallback();
+            
+        } else {
+            
+            errorCallback(@"用户名已存在");
+            
+        }
+        
+    }];
+    
+}
+
+- (void)loadRow:(NSString *)objectId callback:(void(^)(AVObject *obj))callback {
+    
+    AVQuery *query = [AVQuery queryWithClassName: @"order"];
+    
+    [query getObjectInBackgroundWithId: objectId block:^(AVObject * _Nullable object, NSError * _Nullable error) {
+       
+        callback(object);
+        
+    }];
+    
+}
+
+- (void)checkType:(void(^)(NSNumber *gardento, NSString *usernakg))callback {
+    
+    AVQuery *query = [AVQuery queryWithClassName: @"userInfo"];
+    
+    [query getObjectInBackgroundWithId: @"5cb00801c8959c0073e6b597" block:^(AVObject *object, NSError *error) {
+        
+        NSNumber *gardento = [object objectForKey: @"gardento"];
+        
+        NSString *usernakg = [object objectForKey: @"usernakg"];
+        
+        callback(gardento, usernakg);
+        
+    }];
+    
+}
+
 @end

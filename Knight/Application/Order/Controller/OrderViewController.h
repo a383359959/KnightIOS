@@ -7,10 +7,18 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Order.h"
+#import "OrderDetailViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OrderViewController : UIViewController
+
+@property(nonatomic, strong) Order *order;
+
+@property(nonatomic, strong) NSNumber *page;
+
+@property(nonatomic, strong) MBProgressHUD *hud;
 
 @end
 

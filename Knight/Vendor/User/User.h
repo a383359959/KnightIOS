@@ -14,10 +14,11 @@
 #import "UserInfoViewController.h"
 #import "OrderViewController.h"
 #import "OngoingViewController.h"
+#import "BrowserViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface User : NSObject
+@interface User : NSObject <UITabBarControllerDelegate>
 
 @property(nonatomic, strong) UIWindow *window;
 

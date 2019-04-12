@@ -62,6 +62,20 @@
         
     };
     
+    self.home.didSelectBlock = ^(NSString * _Nonnull objectId) {
+        
+        kStrongSelf(self);
+        
+        OrderDetailViewController *vc = [[OrderDetailViewController alloc] init];
+        
+        vc.objectId = objectId;
+        
+        [vc setHidesBottomBarWhenPushed: YES];
+        
+        [self.navigationController pushViewController: vc animated: YES];
+        
+    };
+    
     [self.view addSubview: self.home];
     
 }
@@ -83,7 +97,7 @@
     LeanCloud *leanCloud = [LeanCloud getInstance];
     
     self.home.tableList.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-       
+        NSLog(@"run");
         self.page = [NSNumber numberWithInt: 1];
         
         [leanCloud loadList: self.page type: LIST_TYPE_NEW_TASK callback:^(NSArray * _Nonnull array) {
@@ -142,7 +156,7 @@
 
 - (void)noData:(NSInteger)num {
     
-    if (num <= 10) {
+    if (num > 0) {
         
         self.home.noData.hidden = YES;
         

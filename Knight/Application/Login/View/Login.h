@@ -25,6 +25,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property(nonatomic, copy) void(^submitBlock)(void);
 
+@property(nonatomic, copy) void(^regBlock)(void);
+
 @end
 
 NS_ASSUME_NONNULL_END

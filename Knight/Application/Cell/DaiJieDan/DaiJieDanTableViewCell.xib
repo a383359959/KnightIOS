@@ -114,22 +114,52 @@
                                     <color key="titleColor" red="0.16078431369999999" green="0.63137254899999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f44-ll-WAo">
+                                <rect key="frame" x="0.0" y="81" width="187" height="40"/>
+                                <state key="normal" title="取消订单">
+                                    <color key="titleColor" red="1" green="0.27058823529411763" blue="0.31372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyU-Kx-5FM">
+                                <rect key="frame" x="187" y="81" width="187" height="40"/>
+                                <state key="normal" title="完成订单">
+                                    <color key="titleColor" red="0.16078431369999999" green="0.63137254899999995" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ibl-o1-vu9">
+                                <rect key="frame" x="0.0" y="81" width="374" height="40"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.60784313729999995" green="0.60784313729999995" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ibl-o1-vu9" secondAttribute="bottom" id="07Z-tS-1vj"/>
                             <constraint firstItem="PEb-SS-hNs" firstAttribute="top" secondItem="egt-Rp-BXP" secondAttribute="top" id="4Gg-jZ-d32"/>
                             <constraint firstAttribute="bottom" secondItem="InX-Bn-VAk" secondAttribute="bottom" id="9Po-a1-wyf"/>
+                            <constraint firstItem="ibl-o1-vu9" firstAttribute="leading" secondItem="egt-Rp-BXP" secondAttribute="leading" id="Frz-rk-5NG"/>
                             <constraint firstAttribute="trailing" secondItem="Uzj-Co-BT1" secondAttribute="trailing" id="GsD-yx-fjv"/>
+                            <constraint firstAttribute="trailing" secondItem="vyU-Kx-5FM" secondAttribute="trailing" id="GyI-h7-oyU"/>
+                            <constraint firstItem="ibl-o1-vu9" firstAttribute="top" secondItem="ATQ-gv-Sim" secondAttribute="bottom" id="IQb-iY-f9Y"/>
                             <constraint firstItem="Uzj-Co-BT1" firstAttribute="leading" secondItem="egt-Rp-BXP" secondAttribute="leading" id="JSR-w9-ZU8"/>
                             <constraint firstAttribute="trailing" secondItem="InX-Bn-VAk" secondAttribute="trailing" id="K9g-wF-28E"/>
                             <constraint firstItem="ATQ-gv-Sim" firstAttribute="leading" secondItem="egt-Rp-BXP" secondAttribute="leading" id="Lu2-Na-cnH"/>
                             <constraint firstItem="InX-Bn-VAk" firstAttribute="top" secondItem="ATQ-gv-Sim" secondAttribute="bottom" id="MIJ-Jx-nOL"/>
                             <constraint firstItem="PEb-SS-hNs" firstAttribute="leading" secondItem="egt-Rp-BXP" secondAttribute="leading" id="Rg0-J9-iZy"/>
+                            <constraint firstItem="vyU-Kx-5FM" firstAttribute="leading" secondItem="f44-ll-WAo" secondAttribute="trailing" id="TB0-JQ-Hio"/>
                             <constraint firstAttribute="trailing" secondItem="PEb-SS-hNs" secondAttribute="trailing" id="dqk-B6-flJ"/>
                             <constraint firstItem="ATQ-gv-Sim" firstAttribute="top" secondItem="Uzj-Co-BT1" secondAttribute="bottom" id="efO-bW-AB2"/>
+                            <constraint firstItem="vyU-Kx-5FM" firstAttribute="width" secondItem="f44-ll-WAo" secondAttribute="width" id="kxu-KP-C5o"/>
+                            <constraint firstAttribute="trailing" secondItem="ibl-o1-vu9" secondAttribute="trailing" id="lgw-ks-8qE"/>
                             <constraint firstAttribute="trailing" secondItem="ATQ-gv-Sim" secondAttribute="trailing" id="mZk-Ee-bdH"/>
+                            <constraint firstAttribute="bottom" secondItem="f44-ll-WAo" secondAttribute="bottom" id="q7q-Gl-XOf"/>
                             <constraint firstItem="Uzj-Co-BT1" firstAttribute="top" secondItem="PEb-SS-hNs" secondAttribute="bottom" id="rrw-if-F6u"/>
                             <constraint firstItem="InX-Bn-VAk" firstAttribute="leading" secondItem="egt-Rp-BXP" secondAttribute="leading" id="s1b-dn-uIw"/>
+                            <constraint firstItem="vyU-Kx-5FM" firstAttribute="centerY" secondItem="f44-ll-WAo" secondAttribute="centerY" id="sMm-Ze-k7J"/>
+                            <constraint firstItem="f44-ll-WAo" firstAttribute="leading" secondItem="egt-Rp-BXP" secondAttribute="leading" id="vaT-dr-8lL"/>
+                            <constraint firstItem="vyU-Kx-5FM" firstAttribute="height" secondItem="f44-ll-WAo" secondAttribute="height" id="wQK-DB-Hty"/>
+                            <constraint firstItem="f44-ll-WAo" firstAttribute="top" secondItem="ATQ-gv-Sim" secondAttribute="bottom" id="zIq-rU-Fvn"/>
                         </constraints>
                     </view>
                 </subviews>
@@ -143,11 +173,14 @@
             <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="calibratedRGB"/>
             <connections>
                 <outlet property="boxView" destination="egt-Rp-BXP" id="n8L-hv-n2j"/>
+                <outlet property="cancelBtn" destination="f44-ll-WAo" id="fqe-A3-dMI"/>
                 <outlet property="end_address" destination="MEg-r1-bjc" id="BZl-FS-hFr"/>
                 <outlet property="end_distance" destination="6E1-8q-LbR" id="pDx-Rc-ugV"/>
                 <outlet property="start_address" destination="ppN-T3-JTR" id="JCZ-fn-fm4"/>
                 <outlet property="start_distance" destination="AwH-tB-JcT" id="bA3-yq-wJk"/>
                 <outlet property="submitBtn" destination="InX-Bn-VAk" id="LXa-DN-ksN"/>
+                <outlet property="successBtn" destination="vyU-Kx-5FM" id="X53-0K-vXb"/>
+                <outlet property="successLabel" destination="ibl-o1-vu9" id="T9k-QK-9iR"/>
             </connections>
             <point key="canvasLocation" x="47.826086956521742" y="99.776785714285708"/>
         </tableViewCell>

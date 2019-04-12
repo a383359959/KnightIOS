@@ -18,6 +18,12 @@
 #import <LeanCloud/LeanCloud.h>
 #import <QHMessage/QHMessage.h>
 
+#import <JPush/JPUSHService.h>
+// iOS10 注册 APNs 所需头文件
+#ifdef NSFoundationVersionNumber_iOS_9_x_Max
+    #import <UserNotifications/UserNotifications.h>
+#endif
+
 #define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] < 1 ? YES : NO )
 #define kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)
 #define kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)

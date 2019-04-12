@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "LeanCloud.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -22,9 +23,21 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) IBOutlet UILabel *end_distance;
 
+@property (weak, nonatomic) IBOutlet UIButton *cancelBtn;
+
+@property (weak, nonatomic) IBOutlet UIButton *successBtn;
+
+@property (weak, nonatomic) IBOutlet UILabel *successLabel;
+
 @property (weak, nonatomic) IBOutlet UIButton *submitBtn;
 
+@property(nonatomic, copy) void (^cancelBlock)(void);
+
+@property(nonatomic, copy) void (^successBlock)(void);
+
 @property(nonatomic, copy) void (^submitBlock)(void);
+
+- (void)reloadLayout:(LIST_TYPE)type;
 
 @end
 

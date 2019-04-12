@@ -30,9 +30,25 @@
     
     self.login.frame = CGRectMake(0, 0, kWidth, SafeHeight);
     
+    kWeakSelf(self);
+    
     self.login.submitBlock = ^{
         
+        kStrongSelf(self);
+        
         [User login: self.login.username.text password: self.login.password.text view: self.view];
+        
+    };
+    
+    self.login.regBlock = ^{
+        
+        kStrongSelf(self);
+        
+        UserCreateUserViewController *vc = [[UserCreateUserViewController alloc] init];
+        
+        vc.title = @"注册";
+        
+        [self.navigationController pushViewController: vc animated: YES];
         
     };
     
